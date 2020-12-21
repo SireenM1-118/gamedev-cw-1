@@ -4,6 +4,7 @@ namespace ConsoleApp1
 {
     class Program
     {
+        static double playerspeed = 40;
         static void Main(string[] args)
         {
             string charectername = "zac"; 
@@ -23,20 +24,24 @@ namespace ConsoleApp1
             int heroage = 33;
 
             double age_differance = heroage - age;
-
-            //Console.WriteLine(age_differance);
-
             Console.WriteLine(" The age difference between the two characters is {0}", age_differance);
-             
 
-
-
-
-
-
-
-
+            setspeed(2.5);
+           Console.WriteLine( "the player current speed is " + getspeed());
         }
+
+        static void setspeed(double newspeed )
+        {
+            
+            playerspeed = newspeed;
+            
+        }
+         
+        static double getspeed()
+        {
+            return playerspeed;
+        }
+
 
 
     }
