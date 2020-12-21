@@ -15,6 +15,20 @@ namespace ConsoleApp1
 
             Console.WriteLine ("Hello my name is " + charectername + " and my age is " + age + ". I have super powers : " + superpower1 + " and " + superpower2 + ". My speed is {0}",speed);
 
+            string HeroName = "Jack";
+            string herosuperpower1 = "flying";
+            string herosuperpower2 = "invisibility";
+
+            double heroheight = 177;
+            int heroage = 33;
+
+            double age_differance = heroage - age;
+
+            //Console.WriteLine(age_differance);
+
+            Console.WriteLine(" The age difference between the two characters is {0}", age_differance);
+             
+
 
 
 
